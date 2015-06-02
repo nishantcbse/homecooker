@@ -1,6 +1,5 @@
 <?php
 
-// module/StickyNotes/config/module.config.php:
 return array(
     'controllers' => array(
         'invokables' => array(
@@ -9,7 +8,7 @@ return array(
     ),
     'router' => array(
         'routes' => array(
-            'stickynotes' => array(
+            'admin' => array(
                 'type' => 'segment',
                 'options' => array(
                     'route' => '/admin[/:action][/:id]',
@@ -51,4 +50,7 @@ return array(
             ),
         ),
     ),
+	'module_layouts' => array(
+		'Admin' => 'layout/adminlayout.phtml'
+	),
 );

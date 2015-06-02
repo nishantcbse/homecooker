@@ -2,10 +2,8 @@
 
 namespace Admin;
 
-use Zend\ModuleManager\Feature\AutoloaderProviderInterface;
-use Zend\ModuleManager\Feature\ConfigProviderInterface;
 
-class Module implements AutoloaderProviderInterface, ConfigProviderInterface{
+class Module{
 
     public function getAutoloaderConfig() {
         return array(
